@@ -1,1 +1,1 @@
-docker build . -t vincentfenet/teltonika-sdk:rutos-ipq40xx-rutx-00.07.04
+docker build . -t vincentfenet/teltonika-sdk:rutos-ath79-rut9-00.07.04

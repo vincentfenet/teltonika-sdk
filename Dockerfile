@@ -5,6 +5,6 @@ RUN wget -O - https://deb.nodesource.com/setup_14.x | bash - && apt update && ap
 RUN useradd -m builder && echo 'builder ALL=NOPASSWD: ALL' > /etc/sudoers.d/builder
 USER builder
 WORKDIR /home/builder
-RUN wget -O - https://wiki.teltonika-networks.com/gpl/RUTX_R_GPL_00.07.04.tar.gz -q | tar xzf - -C .
-RUN cd rutos-ipq40xx-rutx-gpl; ./scripts/feeds update -a
-RUN cd rutos-ipq40xx-rutx-gpl; make -j8
+RUN wget -O - https://wiki.teltonika-networks.com/gpl/RUT9_R_GPL_00.07.04.tar.gz -q | tar xzf - -C .
+RUN cd rutos-ath79-rut9-gpl; ./scripts/feeds update -a
+RUN cd rutos-ath79-rut9-gpl; make -j8
